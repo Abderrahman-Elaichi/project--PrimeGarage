@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primari-color: #ffc300;
+    --second-color: #003566;
+    --txt-color: #343a40;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+position: fixed;
+
+top:0;
+left: 0;
+right: 0;
+z-index: 10000;
+
+    height: 6rem;
+    background: url(./img/body-bg.jpg);
+    color: var(--primari-color);
+    padding: 1rem 1rem;
+    margin-bottom: rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 3rem;
+
+}
+
+header h1 {
+    margin: 0;
+}
+header .logo i{
+    font-size: 1.5rem;
+    color: #ffc300;
+    display:none;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--primari-color);
+
+}
+
+
+.home {
+    display: flex;
+margin-top: 10rem;
+margin-left: 2rem;
+margin-right: 2rem;
+    justify-content: space-between;
+    
+
+}
+
+.home .right {
+    background-color: #0056b3;
+    width: 40rem;
+    height: 30rem;
+}
+
+.home .right img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home .left {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.home .left span {
+
+    font-weight: 500;
+    color: #0056b3;
+    font-size: 2.5rem;
+}
+
+.home .left h1 {
+    color: var(--txt-color);
+    font-size: 1.5rem;
+
+}
+
+.home .left img {
+    width: 5rem;
+}
+
+
+.titel h1{
+    text-align: center;
+    margin-top:8rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--second-color);
+     cursor: pointer;
+}
+
+
+.our-services {
+    
+    color: #FFFFFF;
+    width: 60rem;
+    margin-left: 13rem;
+}
+
+.our-services .swiper {
+    border: 3px solid black;
+    width: 100%;
+    height: 28rem;
+}
+
+.our-services .swiper-slide {
+    position: relative;
+
+
+}
+
+.our-services .swiper-slide img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: absolute;
+
+}
+
+
+
+.swiper-slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    font-size: 1.4rem;
+    color: #0056b3;
+    gap: 1rem;
+}
+
+.our-services h2 {
+    -webkit-text-stroke: 1px black;
+    font-size: 2.5rem;
+    color: #F4F4F4;
+}
+
+.our-services p {
+    padding: 0 9rem;
+    text-align: center;
+    color: white;
+}
+
+.our-services .details a {
+    background-color: var(--primari-color);
+    color: #F4F4F4;
+    border: 1px solid black;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.our-services .details a:hover {
+    transform: scale(1.1);
+}
+
+
+.service {
+    padding: 5rem 0;
+}
+.service .service-item:hover{
+    transform: scale(1.1);
+}
+.service .header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   justify-content: center;
+}
+.service .header img{
+    width: 3rem;
+}
+
+
+
+.service h2 {
+    color: var(--second-color);
+    
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.service h3{
+    color: var(--second-color);
+    margin-top: .5rem;
+    margin-bottom: .6rem;
+}
+.service p{
+    font-size: 1.2rem;
+    
+}
+
+.service-list {
+ margin-left: 4rem;
+    display: flex;
+   gap: 3rem;
+    overflow: auto;
+   
+    
+    
+}
+
+.service-item {
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width:30rem;
+    
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.service-item img {
+    width: 15rem;
+    height: 10rem;
+    border-bottom: 1px solid #C0C0C0;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+.booking {
+    background: #FFFFFF;
+    padding: 50px 0;
+}
+
+.booking h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0056b3;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #003d7a;
+}
+
+.contact {
+    background: #F4F4F4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+   
+#menuBtn{
+    display: block;
+}
+    nav ul{
+        flex-direction: column;
+        background-color: #343a408c;
+      position: absolute;
+    right:-150%;
+    top: 6rem;
+    width: 10rem;
+    padding: 2rem 1rem;
+ 
+    
+    }
+    nav .show{
+        right:0;
+        transition: 0.3s;
+    }
+    
+    header i{
+        display: block;
+        position: absolute;
+        right: 2rem;
+    }
+   .home{
+    margin-top:3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   gap: 3rem;
+   }
+   .home .left{
+    margin-top: 6rem;
+   }
+   .home .right{
+    width: 20rem;
+    height: 20rem;
+   }
+   .home .right img{
+    width: 100%;
+    
+   }
+   .our-services{
+    font-size: 50%;
+    width: 25rem;
+    margin-left: 0;
+    height: 25rem;
+   }
+   .our-services .swiper{
+    width:100%;
+    height: 20rem;
+    
+   }
+   .our-services .swiper-slide .details{
+    top: 30%;
+   }
+   .our-services .swiper-slide .details h2{
+font-size: 2rem;
+   }
+   .our-services .swiper-slide .details p{
+    padding: 0;
+    font-size: 1rem;
+
+   }
+   .service .service-list{
+    margin-left: 1rem;
+   }
+   .service .container h2{
+    font-size: 1.8rem;
+    text-align: center;
+   }
+
+}
